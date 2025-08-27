@@ -8,7 +8,10 @@ const searchCountry = async () => {
     const city = search.value.trim()
     
     if (!city) {
-        weatherContent.innerHTML = `<h2>Please enter a city name</h2>`
+        weatherContent.innerHTML = `<div>
+    <h2>Empty Input!</h2>
+    <p>Please try again with a valid <u>city name</u>.</p>
+    </div>`
         return
     }
 

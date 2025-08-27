@@ -12,6 +12,7 @@ body{
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
+    object-fit: cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -81,6 +82,16 @@ header h1{
 }
 
 .weather-content img{
-    width: 200px;
-    height: 200px;
+    width: clamp(150px, 20vw, 200px)
 }
+
+/* .showMessage{
+    width: clamp(200px, 20vw, 800px);
+    height: 90px;
+    background-color: green;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+} */
