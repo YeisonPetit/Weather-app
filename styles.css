@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-image: url("assets/weather.jpg");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 400px;
+    width: clamp(300px, 60vw, 600px);
+    box-shadow: 0 0.3px 0.7px rgba(0, 0, 0, 0.126),
+    0 0.9px 1.7px rgba(0, 0, 0, 0.179), 0 1.8px 3.5px rgba(0, 0, 0, 0.224),
+    0 3.7px 7.3px rgba(0, 0, 0, 0.277), 0 10px 20px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(20px);
+    transition: 0.5s ease;
+    gap: 50px;
+}
+
+.inputs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.inputs input:nth-child(1){
+    padding: 20px;
+    width: 70%;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.inputs input:nth-child(2){
+    padding: 10px;
+    width: 20%;
+    height: 50px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+    cursor: pointer;
+}
+
+header h1{
+    font-size: calc(30px + 2vw);
+    margin-top: 30px;
+}
+
+.weather-content{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.weather-content img{
+    width: 200px;
+    height: 200px;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="shortcut icon" href="/public/image.png" type="image/x-icon">
+    <title>Weather App </title>
+  </head>
+  <body>
+    <header>
+      <h1>Weather app with js <i class="fa-solid fa-umbrella"></i></h1>
+    </header>
+    <main>
+      <div class="inputs">
+        <input
+          type="text"
+          id="input-search"
+          placeholder="write your country or city"
+          required
+        />
+        <input type="submit" onclick="searchCountry()" />
+      </div>
+
+      <div class="weather-content" id="weather-content">
+        <img src="" alt="" />
+        <h1 id="weather-name"></h1>
+        <span id="temperature"></span>
+      </div>
+    </main>
+
+    <script src="main.js"></script>
+  </body>
+</html>
